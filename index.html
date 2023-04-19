@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7775c06804.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div id="loader-container">
+      <div class="clock-loader"></div>
+    </div>
+    <div id="container">
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+
+      <div id="content">
+        <div id="weather-info">
+          <h1 id="description"></h1>
+          <h2 id="city"></h2>
+          <div id="temp-container">
+            <h1 id="temp"></h1>
+            <h1 class="symbol">°C</h1>
+            <img id="icon-img" src="" alt="" />
+          </div>
+          <p id="f">Show °F</p>
+          <p id="c" class="display">Show °C</p>
+          <div>
+            <p>Feels like:</p>
+            <span id="feels-like"></span>
+            <span class="bold symbol">°C</span>
+          </div>
+          <div>
+            <p>Humidity:</p>
+            <p class="bold"><span id="humidity"></span> %</p>
+          </div>
+          <div>
+            <p>Wind speed:</p>
+            <span id="wind-speed" class="bold"></span>
+            <span class="bold" id="wind-speed-symbol">km/h</span>
+          </div>
+        </div>
+        <div id="search-and-time">
+          <div id="search-container">
+            <input type="text" id="location" placeholder="Search Location..." />
+            <i class="fas fa-search" id="search"></i>
+          </div>
+          <div>
+            <p id="current-date"></p>
+            <p id="current-time"></p>
+            <p id="error" class="hidden">City not found</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Kavalashvili<i class="fab fa-github"></i></p>
+      </footer>
+    </div>
+  </body>
+</html>
